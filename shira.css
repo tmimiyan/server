@@ -1,0 +1,41 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background-image: url("menu.png");
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-right: 25px;
+}
+a:hover {
+  color: yellow;
+}
+
+body {
+  background-image: url("den.png");
+  background-size: cover;
+  background-attachment: fixed;         /* 固定 */
+  background-position: center center;   /* 縦横中央 */
+}
+
+.itn_btn {
+  width: 800px;
+  height: auto;
+}
+
+.itn_btn {
+   max-width: 95%;  /* 横幅に合わせて自動縮小するが、拡大はしない */
+}
