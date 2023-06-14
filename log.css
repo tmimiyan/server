@@ -1,0 +1,99 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background-image: url("menu.png");
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+}
+a:hover {
+  color: yellow;
+}
+
+body {
+  background-image: url("den2.png");
+  background-size: cover;
+  background-attachment: fixed;         /* 固定 */
+  background-position: center center;   /* 縦横中央 */
+}
+
+.itn_btn {
+  width: 800px;
+  height: auto;
+}
+
+.itn_btn {
+   max-width: 95%;  /* 横幅に合わせて自動縮小するが、拡大はしない */
+}
+
+.button {
+   /* ボタンの表示 */
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+  display: inline-block;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  background-color: #3e8a4c;
+  box-shadow: 0px 0px 0px 2px #0a0a0a;
+  color: #fff;
+  border: solid 2px #316d42;
+  border-top: solid 2px #64cb55;
+}
+
+.button:hover {
+  background-color: #429255;
+}
+
+.button:active {
+  box-shadow: 0px 0px 0px 2px #fff;
+}
+
+.table-scroll{
+  overflow: auto; /*スクロールさせる*/
+  white-space: nowrap; /*文字の折り返しを禁止*/
+}
+
+.table-scroll::-webkit-scrollbar{　　
+ height: 5px;
+}
+.table-scroll::-webkit-scrollbar-track{
+ background: #800;
+}
+.table-scroll::-webkit-scrollbar-thumb {
+ background: #999;
+}
+
+/* 以下、tableの指定 */
+.table-scroll table{
+  border-collapse:collapse;
+  border-spacing:0;
+  border-top:#ccc solid 1px;
+  border-left:#ccc solid 1px;
+}
+.table-scroll table th,
+.table-scroll table td{
+  padding:10px 15px;
+  font-weight:normal;
+  border-right:#ccc solid 1px;
+  border-bottom:#ccc solid 1px;
+  font-size:13px;
+}
+.table-scroll table th{
+  background:#eee;
+  width:150px;
+}
