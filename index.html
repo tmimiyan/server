@@ -38,12 +38,7 @@ return false;
 </table>
 </div>
 
-<p align="center">
-<br><input type="password" id="user" placeholder="ID" size="15">
-<br><input type="password" id="pass" placeholder="Password" size="15">
-<br><label style="color:red"></label>
-<br><input type="button" id="submit" value="Login">
-</p>
+<span style="font-size: 11pt;"><p align="left"><label style="color:white;">参加するには、管理者から招待を受けて下さい。</label></span></p></span>
 
 </div>
 
@@ -60,26 +55,5 @@ return false;
 <br><br>
 <p align="center"></p>
 <br><br>
-
-<script>
-   document.getElementById("submit").onclick = function() {
-    var user = document.getElementById("user").value;
-        var pass = document.getElementById("pass").value;
-         if (user === "youlike" && pass === "train00") {
-            location.href = 'log.html';
-              document.getElementById("user").value = "";
-              document.getElementById("pass").value = "";
-              localStorage.setItem('storage5',"roku");
-          } else {
-document.querySelector("label").textContent = "パスワード又はIDが違います";
-          }
-        }
-        document.getElementById("user").onclick = function() {
-            document.querySelector("label").textContent = "";
-        }
-        document.getElementById("pass").onclick = function() {
-            document.querySelector("label").textContent = "";
-        }
-    </script>
 
 </html>
