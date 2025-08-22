@@ -27,7 +27,6 @@ a:hover {
 /* PCではハンバーガーメニューを表示しない */
 @media (min-width: 550px){
 body {
-  overflow: hidden
   background-image: url("den4.png");
   background-size: contain;
   background-attachment: scroll;         /* 固定 */
@@ -38,7 +37,6 @@ body {
 /* スマホではメニューを表示しない */
 @media (max-width: 550px){
 body {
-  overflow: hidden
   background-image: url("den4.png");
   background-size: contain;
    background-attachment: scroll;   
@@ -201,4 +199,5 @@ body {
   background:#eee;
   width:150px;
 }
+
 
