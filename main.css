@@ -37,6 +37,10 @@ body {
 /* スマホではメニューを表示しない */
 @media (max-width: 550px){
 body {
+  position: relative;
+  padding: 1em;
+}
+body::before {
   content: "";
   display: block;
   position: fixed;
@@ -46,6 +50,7 @@ body {
   height: 100vh;
   z-index:-1;
   background: url("den4.png") center/cover no-repeat;
+ }
 }
 
 .button {
@@ -203,6 +208,7 @@ body {
   background:#eee;
   width:150px;
 }
+
 
 
 
