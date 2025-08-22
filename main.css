@@ -28,7 +28,7 @@ a:hover {
 @media (min-width: 550px){
 body {
   background-image: url("den4.png");
-  background-size: contain;
+  background-size: fixed;
   background-attachment: scroll;         /* 固定 */
   background-position:  center;   /* 縦横中央 */
 }
@@ -38,7 +38,7 @@ body {
 @media (max-width: 550px){
 body {
   background-image: url("den4.png");
-  background-size: contain;
+  background-size: fixed;
    background-attachment: scroll;   
   background-position:  center;   /* 縦横中央 */
 }
@@ -199,5 +199,6 @@ body {
   background:#eee;
   width:150px;
 }
+
 
 
