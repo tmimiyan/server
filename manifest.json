@@ -1,0 +1,14 @@
+{
+  "name":"鉄道クラフト",
+  "short_name":"鉄道クラフト",
+  "icons": [{
+      "src": "apple-touch-icons.png",
+      "sizes":"180x180",
+      "type": "image/png"
+    }
+   ],
+  "start_url": "https://www.traincraft.net",
+  "display": "browser",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF"
+}
