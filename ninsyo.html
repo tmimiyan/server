@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UDF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>鉄道クラフトサーバー</title>
+<link rel="stylesheet" href="log.css">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="apple-touch-icon" href="apple-touch-icons.png">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+document.oncontextmenu = function(){
+return false;
+};  
+</script>
+<script>window.gtranslateSettings = {"default_language":"ja","native_language_names":true,"detect_browser_language":true,"languages":["ja","en","ko"],"wrapper_selector":".gtranslate_wrapper","flag_size":24,"horizontal_position":"right","vertical_position":"top","flag_style":"3d","alt_flags":{"en":"usa"}}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+</head>
+
+<body>
+
+
+<nav>  
+<ul>
+    <li><a href="https://tmimiyan.github.io/server">ホーム</a></li>
+    <li><a href="https://tmimiyan.github.io/server/sapoto">サポート</a></li>
+    <li><a href="https://tmimiyan.github.io/server/shira">お知らせ</a></li>
+    <li class="gtranslate_wrapper"></li>
+</ul>
+</nav>
+
+
+  <form id="inputForm" align="center">
+  <div align="center">
+    <br><br><br><br><br><br><h4>認証コードを入力してください。</h4>
+    <br><input type="text" id="userInput" class="inText" name="userInput" placeholder="認証コード" maxlength="12" size="12" required>
+    <br><br><button type="submit" id="btnc" class="btnc" align="center">認証</button>
+　　<br><br><label class="shadow"><em></em></label><br>
+  </div>
+  </form>
+
+  <script src="main.js"></script>
+
+<div class="scrollable-container">
+<div class="content">
+<div align="center">
+<br><br><br>
+
+<style>
+input { font-size: 110%;
+    }
+
+.btnc{
+    display: block;
+    width: 100px;
+    /*コレ*/background: rgba(192,192,192,0.7);
+    border: 2px solid #FFF;
+    padding: 15px;
+    text-align: center;
+    color: #FFF;
+    font-size: 100%;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.inText {
+  box-sizing    : border-box;
+  margin        : 0;
+  vertical-align: top;
+ 
+  width         : 100%;
+  max-width     : 250px;
+  height        : 38px;
+  background    : #ffffff;
+  border        : 2px solid #4da6ff;
+  border-radius : 4px;
+  padding       : 0 10px;
+  font-size     : 20px;
+  color         : #333333;
+  font-weight   : bold;
+  letter-spacing: .1em;
+}
+ /* --- 入力フィールドにフォーカスか来たら ----------------*/
+.inText:focus {
+  border-color  : #59b300;                 /* 枠線色     */
+  background    : rgba(255, 255, 255, 1);  /* 背景色     */
+  box-shadow    : 4px 4px 2px #999;        /* 影付け     */
+  outline       : 0;
+}
+ /* --- 入力説明の文字(標準) -----------------------------*/
+.inText:placeholder-shown {
+  color         : #808080;                 /* 文字色     */
+  font-size     : 14px;                    /* 少し小さく */
+}
+ /* --- 入力説明の文字(Chrome,Safari,Android,iOS等) ---- -*/
+.inText::-webkit-input-placeholder {
+  color         : #808080;                 /* 文字色     */
+  font-size     : 14px;                    /* 少し小さく */
+}
+ /* --- 入力説明の文字(IE用) -----------------------------*/
+.inText:-ms-input-placeholder {
+  color         : #808080;                 /* 文字色     */
+  font-size     : 14px;                    /* 少し小さく */
+}
+ /* --- IEの入力エリア右側×消し -------------------------*/
+.inText::-ms-clear {
+  display     : none;                      /* ×を消す   */
+}
+
+function coloeSet(argObj){
+ // ==============================================
+ //	入力済み時の背景色設定
+ // ==============================================
+    if(argObj.value==""){
+        argObj.style.backgroundColor = "";
+    }else{
+        argObj.style.backgroundColor = "rgba(77, 166, 255, 0.20)";
+    }
+}
+
+function colorReset(argObj){
+    argObj.style.backgroundColor = "";
+}
+
+.shadow{
+    padding: 5px;
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow:
+           1px 1px 0px #fff, -1px -1px 0px #fff,
+          -1px 1px 0px #fff,  1px -1px 0px #fff,
+           1px 0px 0px #fff, -1px  0px 0px #fff,
+           0px 1px 0px #fff,  0px -1px 0px #fff;
+    margin: 0;
+}
+
+</style>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
